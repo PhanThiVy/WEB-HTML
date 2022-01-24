@@ -1,0 +1,25 @@
+#tieu-de {
+    color:#009999;
+    text-align: center;
+
+}
+#body {
+    text-align: justify;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    padding: 50px;
+    background-image: url('https://imgt.taimienphi.vn/cf/Images/np/2020/1/7/mau-background-don-gian-dep-21.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    
+    
+}
+#mo-dau {
+    color: white;
+    font-weight: 500;
+    background-color:#009999;
+}
+#noi-dung {
+    color:#009999;
+}
