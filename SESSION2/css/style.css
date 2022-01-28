@@ -1,25 +1,24 @@
 #tieu-de {
-    color:#009999;
+    color:#359B9B;
     text-align: center;
 
 }
 #body {
-    text-align: justify;
     width: 50%;
-    text-align: left;
     margin: auto;
-    padding: 50px;
-    background-image: url('https://imgt.taimienphi.vn/cf/Images/np/2020/1/7/mau-background-don-gian-dep-21.jpg');
+    padding: 10px;
+    background-image: url('https://i.pinimg.com/originals/02/dd/d3/02ddd373d303439e0fe9b7bebea8150c.png');
     background-repeat: no-repeat;
     background-position: center ;
+    box-shadow: 5px 5px 5px lightgray;
     
     
 }
 #mo-dau {
     color: white;
     font-weight: 500;
-    background-color:#009999;
+    background-color:#359B9B;
 }
 #noi-dung {
-    color:#009999;
+    color:#359B9B;
 }
