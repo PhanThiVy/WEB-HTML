@@ -1,0 +1,94 @@
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-right: 15px ;
+            margin-top: 50px;
+            font-weight: 500; 
+        
+        }
+        .container .frame{
+            display: flex;
+            flex-direction: column;
+            width: calc(25% - 15px - 15px);
+            box-shadow: 5px 5px 10px #ECECED, -3px -3px 10px #ECECED ;
+            margin-left: 15px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        
+        .container .frame .image1{
+            width: 100%;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        .container .frame .content{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .container .frame .content-top{
+            display: flex;
+            flex-direction: column;
+            margin: 0 28px;
+            flex: 1;
+            
+        }
+        .container .frame h4{
+            margin: 30px 0;
+            font-weight: 500;
+            word-break: break-all;
+            display: block;
+            flex: auto;
+            word-break: break-all;
+        }
+        .container .frame .image2{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        .container .frame .content-top .user{
+            display: flex;
+            
+            
+        }
+        .container .frame .content-top .user .person {
+            margin-left: 15px;
+            font-size: small;
+        }
+        .container .frame .content-top .user .person i{
+            color: #20E3B2 ;
+        }
+        .container .frame .content-top .user .person p{
+            color:#B6AFB7 ;
+        }
+        .container .frame .content-bottom{
+            display: flex;
+            align-items: center;
+            
+            padding: 10px 28px 10px 28px ;
+            justify-content: space-between;
+            font-size: small;
+            flex-shrink: 0;
+            border-top: 1px solid rgb(228, 225, 225);
+            
+        }
+        .container .frame .content-bottom .div3-a{
+            display: flex;
+            align-items: center;
+            background-color: #FF6651;
+            color: #f1f1f1;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+        .container .frame .content-bottom p{
+            color: #B6AFB7;
+        }
+        
+            
+    
+
+
+
+       

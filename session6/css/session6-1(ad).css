@@ -1,0 +1,123 @@
+body{
+    width: 90%;
+    margin: auto;
+    
+    
+}
+.container{
+    background-color: #FFFFCC;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+.container .chanh{
+    width: 10%;
+    position: absolute;
+    left: 40em;
+    bottom: 17em;
+    z-index: 1;
+}
+.container .chanh img{
+    width: 100%;
+    
+}
+ h3{
+    color: #CF3201;
+    background-color: #F7C363;
+    text-align: center;
+    padding: 10px;
+}
+.sub-container{
+    padding: 0 20px ;
+    position: relative;
+    z-index: 2;
+}
+.container .sub-container ul{
+    color: #205311;
+}
+.container .sub-container ul li{
+    margin-top: -20px;
+}
+.container .sub-container ul a{
+    color: #94298C;
+    
+}
+.container .sub-container .hr1{
+    background-color: #FF00FF;
+    height: 1px;
+    margin-top: 20px;
+}
+.container .sub-container .item{
+    color: #CF6E0B;
+    margin: 10px 0px 20px 0px;
+}
+.container .sub-container .sub-item{
+    color: #18469E;
+    margin-top: 10px;
+}
+.container .sub-container .div{
+    display: flex;
+    flex-direction: row;
+    padding:0 10px;
+    border-bottom: 2px solid #C7C5B2;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 20;
+
+     
+
+}
+.container .sub-container .div .photo{
+    width: 10%;
+}
+.container .sub-container .div .photo img{
+    width: 80px;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+    
+
+}
+.container .sub-container .div p{
+    margin: 0 10px;
+    line-height: 20px;
+}
+.container .sub-container .span{
+    color: #CF6E0B;
+}
+.container .sub-container p{
+    font-size: small;
+    color:  #205311;
+}
+
+
+.container .sub-container .footer{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #00787C;
+} 
+@media screen and (max-width: 970px){
+    h3{ 
+        font-size: small;
+    }
+    .container .sub-container .div{
+        flex-wrap: wrap;
+    }
+    .container .sub-container .div .photo{
+        width: 25%;
+        margin-left: calc((100% - 25%) / 2) ;
+        margin-bottom: 10px;
+        
+    }
+    .container .sub-container .div .photo img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+}           
+/* @media screen and (max-width: 470px){
+    .container .sub-container .div{
+        
+    }
+
+} */
+

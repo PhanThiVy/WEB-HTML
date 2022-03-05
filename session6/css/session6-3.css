@@ -1,0 +1,237 @@
+body{
+    width: 70%;
+    margin: auto;
+    background-color: black;
+}
+.container{
+    background-color: #f1f1f1;
+    font-family: arial;
+    font-size: smaller;
+    margin: 20px 0;
+}
+/* header */
+.container .header{
+    display: flex;
+    align-items: center;
+}
+.container .header .avatar {
+    width: 20%;
+    margin: 30px 50px;
+}
+.container .header .avatar img{
+    width: 100%;
+}
+.container .header .title h1{
+    font-size: 50px;
+    margin-bottom: -20px;
+    color: #1e1e1e;
+}
+.container .header .title h3{
+    color: #B5B4B4;
+    font-weight: 200;
+    font-size: 20px;
+}
+/* section1 */
+.container .section {
+    display: flex;
+}
+.container .section h3{
+
+    border-bottom: 4px solid #FFBC05;
+    padding-bottom: 5px;
+}
+.container .section .section1{
+    margin: 0 20px;
+    width: cal(30% - 40px);
+    
+}
+.container .section .section1 p{
+    margin-left: 30px;
+}
+.container .section .section1 h3{
+    text-align: center;
+}
+.container .section .section1 .text .b{
+    color: #B5B4B4;
+    
+}
+.container .section  i{
+    font-size: smaller;
+    font-weight: 600;
+}
+.container .section .section1 .text p span{
+    color: #B5B4B4;
+}
+/* section2 */
+.container .section .section2{
+    width: calc(70% - 80px);
+    margin: -13.333px 20px 0 60px;
+}
+.container .section .section2 h3{
+    margin-top: 30px;
+}
+
+.container .section .section2 .lang{
+    width: 70%;
+}
+.container .section .section2 .box{
+    float: right;
+    width: 50%;
+    height: 7px;
+    background-color: #B5B4B4;
+}
+.container .section .section2 .box .box1{
+    width: 80%;
+    height: 7px;
+    background-color: #26CBE7;
+}
+.container .section .section2 .box .box2{
+    width: 60%;
+    height: 7px;
+    background-color: #26CBE7;
+}
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 20px ;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+  margin-right: -450px;
+
+}
+.footer .logo .logo-image{
+    width: 8%;
+}
+.footer .logo .logo-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.footer .logo-image h2 {
+    padding-right: 10px;
+
+}
+.footer .class {
+    display: flex;
+    margin-left: 30px;
+   
+}
+.footer .class .class1{
+    margin-right: 30px;
+}
+.footer .class2{
+    border-left: 4px solid #555454 ;
+}
+.footer .class1 p{
+    margin: -1px;
+    padding-left: 10px;
+}
+
+/* responsive */
+@media screen and (max-width : 1140px){
+    .container{
+        font-size: x-small;
+    }
+    .container .header .title h1{
+        font-size: 40px;
+        margin-bottom: -10px;
+    }
+    .container .header .title h3{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 930px){
+    .container .header .title {
+        margin-left: -35px;
+    }
+    .container .header .title h1{
+        font-size: 35px;
+        margin-bottom: 5px;
+
+    }
+    .container .header .title h3{
+        font-size: 8px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer .logo .logo-image{
+        margin-bottom: 10px;
+    }
+    .footer .class{
+        margin: 0;
+    }
+    .footer .class .class1 {
+        margin: 5px;
+    }
+    
+} 
+@media screen and (max-width: 695px) {
+    body{
+        width: 80%;
+        margin: auto;
+    }
+    .container .header .avatar {
+        margin: 20px;
+    }
+    .container .header .title {
+        margin-left: 0px;
+    }
+    .container .header .title h1{
+        font-size: 23px;
+        margin-left: 0;
+        
+
+    }
+    .container .section {
+        flex-direction: column;
+        justify-items:right;
+    }
+    .container .section .section1{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .container .section .section1 .text p{
+        margin: 0 20px;
+    }
+    .container .section .section2{
+        margin: auto;
+        width: 80%;
+    }
+    .container .section .section2 h3{
+        text-align: center;
+    }
+    .container .section .section2 p{
+        margin: 0 20px;
+    }
+    .container .section .section2 .lang{
+        margin: 0 20px;
+    }
+    .footer {
+        display: flex; 
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .footer .logo {
+        text-align: center;
+    }
+    .footer .class{
+        margin-left: 80px ;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .class .class2{
+        border: none;
+    }
+}
+
+
