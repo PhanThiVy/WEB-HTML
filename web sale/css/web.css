@@ -82,11 +82,12 @@ nav .sup__menu{
     flex-direction: column;
     position: absolute;
     padding: 0;
+    left: 20px;
     display: none;
 }
 nav .sup__menu a{
     font-size: small;
-    padding: 15px 8.5px;
+    padding: 15px 8px;
     border-bottom: 1px solid gray
 }
 nav .sup__menu a .border__bottom{
