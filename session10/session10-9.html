@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background: linear-gradient( #7775FD, #AF28EF);
+            padding: 10px 40px 20px;
+            width: 300px;
+            font-family: Poppins-Regular;
+            text-align: center;
+            
+        }
+       
+        input[type=text], input[type=password]{
+            background: transparent;
+            color: white;
+            padding: 20px 0;
+            border: 0;
+            border-bottom: 2px solid gray;
+            width: 300px;
+
+            outline-color: initial;
+            outline-style: initial;
+            outline-width: 0px;
+}
+        h1{
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+        .checkbox{
+            color: white;
+            padding-top: 30px;
+        }
+        .btn{
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            display: block;
+            margin: 30px auto;
+        }
+        .mat__khau{
+            cursor: default;
+        }
+        .mat__khau a{
+            text-decoration: none;
+            color: white;
+        }
+        input::placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>ĐĂNG NHẬP</h1>
+        
+            <input  type="text" required placeholder="Nhập tên đăng ký">
+        
+            <input  type="password" required placeholder="Nhập mật khẩu">
+        
+       
+        
+        <div class="checkbox">
+            <input type="checkbox" required > 
+            <label>Nhớ đăng nhập lần sau</label></div>
+        
+        <input class="btn" type="submit" value="Đăng nhập">
+        <label class=" mat__khau">
+            <a href="#">Quên mật khẩu</a>
+        </label>
+       
+
+
+    </form>
+</body>
+</html>

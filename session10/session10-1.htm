@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 25%;
+            background-color:#00FFFF ;
+            padding: 10px 30px 10px 20px;
+        }
+        .row{
+            display: flex;
+            margin-bottom: 5px;
+        }
+        label{
+            width: 110px;
+        }
+        .btn{
+            width: 140px;
+            text-align: center;
+            background-color: #DDDDDD;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="row">
+            <label>Họ và tên: *:</label>
+            <input type="text" placeholder="Hãy nhập tên người dùng" required>
+        </div>
+        <div class="row">
+            <label>Tên tài khoản *:</label>
+            <input type="text" required>
+        </div>
+        <div class="row">
+            <label>Email:</label>
+            <input type="email">
+        </div>
+        <div class="row">
+            <label>Mật khẩu *:</label>
+            <input type="password" placeholder="Nhập mật khẩu" required>
+        </div>
+        <div class="row">
+            <label>DOB:</label>
+            <input type="date">
+        </div>
+        <div class="row">
+            <label>Giới tính:</label>
+            <input type="radio" name="nu"> Nam
+            <input type="radio" name="nu"> Nữ
+        </div>
+        <div class="row">
+            <label>Thành phố:</label>
+            <select>
+                <option>Đà Nẵng</option>
+                <option>TP HCM</option>
+                <option>Hà Nội</option>
+            </select>
+        </div>
+        <input type="radio" name="nm" required> Tôi đã đọc hiểu các điều khoản.*
+        
+            <input class="btn" type="submit" name="Đăng kí" value="Đăng kí">
+            <input class="btn" type="reset" name="reset" value="Reset">
+    </form>
+</body>
+</html>

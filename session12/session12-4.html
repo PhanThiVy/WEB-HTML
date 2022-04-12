@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 50%;
+            margin: auto;
+        }
+        fieldset{
+            width: 50%;
+            margin: auto;
+        }
+        legend{
+            color: #433AFF;
+        }
+        form div{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            color: #433AFF;
+        }
+        form div label{
+           width: 80px;
+            
+        }
+        form div label{
+            padding: 4px;
+        }
+        form .btn{
+            color: #ffff;
+            padding: 5px 10px;
+            background-color: #9d98f7;
+            border: 2px solid #6c66da;
+            border-radius: 3px;
+        }
+        #result{
+            width: 100%;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #ADD8E6;
+            color: #433AFF;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function show_result(){
+            let a = (document.getElementById("so__a").value);
+            let b = (document.getElementById("so__b").value);
+            
+            info1 = "Phương trình " + a + "x" + "+" + b + "=" + 0;
+            if( a && b) {
+                if( isNaN(a) || isNaN(b)) {
+                    document.getElementById("result").innerHTML= "Phép tính không thể thực hiện được.";
+                    return false;
+                    } else if ( a == 0 && b == 0){
+                        info2 = "có vô số nghiêm.";
+                    } else if( a !== 0 && b == 0 ){
+                        info2 = "có 1 nghiệm là: " + "x =" + 0;
+                    } else if( a == 0 && b !== 0 ){
+                        info2 = "vô nghiệm.";
+                    } else if( a !== 0 && b !== 0 ){
+                        info2 = "có 1 nghiệm là: " + "x =" + (-b / a);
+                    } 
+                    document.getElementById("result").innerHTML = info1 + " " + info2 ;
+                    return false;
+                }
+                else {
+                alert("Vui lòng nhập đầy đủ ");
+                
+            
+            }
+            
+        }
+            
+        
+    
+            
+            
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Giải phương trình bậc nhất ax+b=0</legend>
+        <form action="http://www.google.com">
+            <div>
+                <label>Nhập a:</label>
+                <input type="text" placeholder="0" id="so__a">
+            </div>
+            <div>
+                <label>Nhập b:</label>
+                <input type="text" placeholder="0" id="so__b">
+            </div>
+            <div>
+                <label>  </label>
+                <input class="btn" type="submit" name="submit" id="submit" value="Submit" onclick="show_result(); return false">
+            </div>
+        </form>
+        
+        
+    </fieldset>
+    <div id="result"></div>
+</body>
+</html>

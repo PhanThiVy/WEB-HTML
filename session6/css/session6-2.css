@@ -107,6 +107,65 @@ body{
 .container .section .section2 b{
     font-size: small;
 }
+@media screen and (max-width: 1080px) {
+    .container .header div{
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .container .header h1{
+        font-size: 40px;
+    }
+.container .section{
+    display: flex;
+    flex-direction: column;
+}
+    
+.container .section .section1 {
+    display: flex;
+    background-color: black;
+    width: calc(100%);
+    padding: 40px;
+    
+}
+
+
+.container .section .section1 .image{
+    width: calc(30%);
+    
+}
+.container .section .section1 .text{
+    
+    width: calc(70% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 20px;
+    justify-content: space-around;
+   
+}
+.container .section .section2{
+    padding-top: 40px;
+}
+
+}
+@media screen and (max-width: 780px){
+    body{
+        width: 90%;
+    }
+    .container .header .h3-1{
+        font-size: 15px;
+        padding: 20px 5px 5px 10px;
+
+    }
+    .container .header h1{
+        font-size: 30px;
+    }
+    .container .section .section1 .text{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 

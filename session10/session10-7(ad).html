@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #FF23DE,#FFBD5D) ;
+        }
+        .container{
+            width: 60%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: Arial;
+            font-size: smaller;
+            font-weight: 500;
+        }
+        .content__left{
+            background-color: white;
+            width: calc(50%);
+            padding-top: 40px;
+            
+        }
+        form{
+            padding: 0px 60px;
+        }
+        
+        .logo{
+            width: 25%;
+            text-align: center;
+            margin-left: calc(50% - 25px);
+           
+    
+        }
+        .logo img{
+            width: 100%;
+        }
+        .title{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            padding: 8px 0;
+        }
+        .input label{
+            padding: 5px;
+        }
+        .input input{
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid #f796a941;
+        }
+        .input label{
+            font-size: xx-small;
+            color: gray;
+        }
+        .input input::placeholder{
+            color: black;
+        }
+        .submit{
+            text-align: center;
+
+        }
+        .btn{
+            padding: 10px 90px;
+            margin-top: 25px;
+            border-radius: 20px;
+            border: none;
+            background: linear-gradient(to right, #FFBD5D, #FF23DE);
+            color: white;
+        }
+        .forgot{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .forgot a{
+            text-decoration: none;
+            font-size: xx-small;
+            color: gray;
+        }
+        .button{
+            margin-top: 60px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .button span{
+            font-size: smaller;
+        }
+        .button button{
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: 1px solid #FF23DE ;
+            color: #FF23DE;
+            background-color: white;
+        }
+        .content__right{
+            width: calc(50% - 120px);
+            padding: 60px ;
+            background: linear-gradient(to left,#FF23DE, #FFBD5D);
+            color: white;
+        }
+        .content__right .title{
+            text-align: left;
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content__left">
+            
+            <form action="#">
+                <div class="logo">
+                    <img src="image/chữ t.jpg" alt="anh">
+               </div>
+
+            <p class="title">We are Tidi</p>
+            
+                <p>Please login to your account</p>
+                <div class="input">
+                    <label>Username</label>
+                <input type="text" required placeholder="Phone no or email id">
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                <input type="password" required placeholder="password">
+                </div>
+                <div class="submit">
+                    <input class="btn" type="submit" value="Login to Tidi">
+                </div>
+               <div class="forgot"> <a href="#">Forgot Password</a></div>
+                <div class="button">
+                    <span>Don't have an account?</span>
+                <button>Create new</button>
+                </div>
+            </form>
+        </div><!--content__left-->
+        <div class="content__right">
+            <p class="title">Lorem ipsum dolor sit amet, consectetur </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+        </div><!--content__right-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            var a = prompt("nhập vào số a bất kì: ", "" );
+            var b = prompt("nhập vào số a bất kì: ", "" );
+            info1 = "Phương trình " + a + "x" + "+" + b + "=" + 0;
+            if( a && b) {
+                if( isNaN(a) || isNaN(b)) {
+                    document.write("Phép tính không thể thực hiện được.");
+                    } else if ( a == 0 && b == 0){
+                        info2 = "có vô số nghiêm.";
+                    } else if( a !== 0 && b == 0 ){
+                        info2 = "có 1 nghiệm là: " + "x =" + 0;
+                    } else if( a == 0 && b !== 0 ){
+                        info2 = "vô nghiệm.";
+                    } else if( a !== 0 && b !== 0 ){
+                        info2 = "có 1 nghiệm là: " + "x =" + (-b / a);
+                    } 
+                    document.writeln(info1 + " " + info2) ;
+                }
+                else {
+                alert("Vui lòng nhập đầy đủ ");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

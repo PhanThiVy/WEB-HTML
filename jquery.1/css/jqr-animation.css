@@ -1,0 +1,17 @@
+button{
+background-color: gray; 
+border: none;   
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+border: 1px solid black;
+margin-right: 15px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+img{
+    margin-top: 50px;
+    width: 400px;
+}

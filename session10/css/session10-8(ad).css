@@ -1,0 +1,31 @@
+body{
+    width: 65%;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-size: smaller;
+}
+.content_left{
+    width: 50%;
+}
+.photo{
+    width: 80%;
+}
+.photo img{
+    width: 100%;
+}
+.content_left p{
+    color: gray;
+}
+.content_left h1{
+    font-weight: lighter;
+}
+.content_right{
+    width: 50%;
+    padding-top: 100px;
+}

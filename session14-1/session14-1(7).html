@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = new Array();
+        var i;
+        var sum = 0;
+        var sum__le = 0;
+        for(i = 0; i <= 9; i++){
+            
+           do{
+            a[i] = parseInt(prompt("nhập vào số thứ:" + i,));
+           }while((a[i] < 0) || (a[i]%2 == 0));
+           document.writeln("a" + "[" + i + "]=" +a[i]);
+        }
+        // tổng 5 số cuối
+        document.write("<br>");
+        for(i = 9; i >= 5; i--){
+             sum += a[i];
+            
+        }
+        document.write("Tổng 5 số cuối là: sum = " + sum);
+        //Tổng số lẻ ở vị trí lẻ
+        document.write("<br>");
+        for(i = 0;i <= 9; i++){
+            if(i%2 != 0){
+                sum__le += a[i];
+            }
+        }
+        document.write("Tổng số lẻ ở vị trí lẻ là: sum__le = " + sum__le);
+    </script>
+</body>
+</html>

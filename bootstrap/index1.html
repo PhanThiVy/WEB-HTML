@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/demoArena.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     
+     <!-- Optional theme -->
+     <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+     <!--jquery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- <link rel="stylesheet" href="js/jquery-3.6.0.min.js"> -->
+     <!-- Latest compiled and minified JavaScript -->
+     <!-- <link rel="stylesheet" href="js/bootstrap.min.js"> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+            border-radius: 0;
+        }
+        .header__top{
+            background-color: #F44336;
+            padding: 20px 30px;
+            color: #ffff;
+        }
+        .affix {
+            top:0;
+            width: 100%;
+            z-index: 9999 !important;
+            background-color: rgba(0, 0, 0, 0.815);
+        }
+        
+        .navbar-brand{
+            padding: 15px;
+        }
+        h4{
+            margin: 0;
+        }
+        .btn-dropdown{
+            border-bottom: 1px solid rgb(158, 157, 157);
+        }
+        /* hoa hồng */
+        .rose{
+            margin-top: -15px;
+        }
+        /* nội dung văn bản */
+        .section{
+            color: #ffff;
+            height: 450px;
+            padding: 40px 30px;
+        }
+        #section1{
+            background-color: #1E88E5;
+           
+        }
+        #section2{
+            background-color: #673AB7;
+        }
+        #section3{
+            background-color: #FF9800;
+        }
+        #section4-1{
+            background-color: #00BCD4;
+        }
+        #section4-2{
+            background-color: #009688;
+        }
+</style>
+   
+</head>
+<body>
+    <div class="container-fruit header__top">
+        <h1>Scrollspy & Affix Example</h1>
+        <h3>Fixed navbar on scroll</h3>
+        <p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+        <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
+    </div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fruit">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    
+                    <h4>WEB SITE NAME</h4>
+                </div>
+            </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">section 1</a></li>
+                        <li><a href="#section2">section 2</a></li>
+                        <li><a href="#section3">section 3</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >section 4 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="btn-dropdown"><a href="#section4-1">section4-1</a></li>
+                                <li><a href="#section4-2">section4-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+   
+    <div class="container-fruit rose">
+        <div class="row">
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+           </div>
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+           </div>
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+           </div>
+           
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+            <h3>Hoa hồng</h3>
+           </div>
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+            <h3>Hoa hồng</h3>
+           </div>
+           <div class="thumbnail  col-sm-4 col-md-4">
+            <img src="images/hoa-hong.jpg" alt="hoa hồng">
+            <h3>Hoa hồng</h3>
+           </div>
+           
+        </div>
+    </div>
+    
+    <div class="container-fruit  section" id="section1">
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div class="container-fruit section" id="section2" >
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div class="container-fruit section" id="section3">
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div class="container-fruit section" id="section4-1">
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div class="container-fruit section" id="section4-2">
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+</body>
+</html>

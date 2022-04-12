@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 30%;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+        form{
+            background-color: #ffff;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        h1{
+            color: #1F568B;
+            text-align: center;
+        }
+        
+        form div{
+            display: flex;
+            flex-wrap: wrap;
+           margin: 15px 0;
+        }
+        form div label{
+            width: 120px;
+            color: #1F568B;
+        }
+        form div input{
+            padding: 5px 0;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            text-align: center;
+            background-color: #1F568B;
+            border: none;
+            padding: 8px 20px;
+            margin-left: 8px;
+            border-radius: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        function validate(){
+           
+            let password = document.getElementById("password").value;
+            let re__password = document.getElementById("re__password").value;
+            if(password == re__password) {
+                document.close;
+            } else{
+                
+                alert("mật khẩu nhập lại không nhất quán");
+                
+               document.getElementById("password").focus();
+               End(document.getElementById("submit"));
+               
+            }
+          
+           
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <form action="https://www.facebook.com/profile.php?id=100065209254889">
+                <h1>Register to system</h1>
+                <div>
+                    <label>Username:</label>
+                    <input type="text" required id="username" autofocus>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" required id="password">
+                </div>
+                <div>
+                    <label>Re__Password:</label>
+                    <input type="password" required id="re__password">
+                </div>
+                <div class="submit">
+                    <input class="btn" id="submit" type="submit" value="Login" onclick="validate(); return false" >
+                <input class="btn" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</body>
+</html>

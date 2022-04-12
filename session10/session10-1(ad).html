@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 60%;
+            margin: auto;
+           
+        }
+        .container{
+            width: 100%;
+            height: 600px;
+            background-color:#BBD59F ;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .sup{
+            width:0px;
+            height: 0;
+             border-right: 1000px solid  transparent;
+            border-bottom: 500px solid #AACB88  ;
+            position: relative;
+            bottom: -100px;
+
+        }
+        .content{
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+            
+            
+        }
+        label{
+            display: none;
+        }
+        input{
+            border: 0;
+            border-bottom: 2px solid gray;
+            outline-width: initial;
+            outline-style: initial;
+            outline-color: 0 ;
+            
+        }
+        input:invalid label{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sup">
+            
+        </div>
+        <div class="content">
+            <div class="photo">
+                <img src="" alt="">
+            </div>
+            <form action="#">
+                <h1>CONTACT</h1>
+                <label>FIRST NAME</label><br>
+                <input type="text" required placeholder="FIRST NAME">
+            </form>
+        </div>
+        <div>
+            <input class="btn" type="submit" value="SEND">
+        </div>
+    </div>
+</body>
+</html>

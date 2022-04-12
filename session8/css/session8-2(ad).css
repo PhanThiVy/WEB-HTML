@@ -1,0 +1,190 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: beige;
+    background-color: #C5E0E7;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 60px;
+    background-color: white;
+    font-size: X-small;
+    /* font-family: Arial; */
+}
+.container .photo{
+    width: 35%;
+    
+}
+.container .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .content{
+    width: calc(65% - 140px);
+    padding: 40px 70px;
+    position: relative;
+    
+}
+.container .content header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .content header button{
+    background-color: transparent;
+    border: none;
+    width: calc(35%);
+    margin-left: -36px;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: relative;
+    left: 32px;
+
+}
+.container .content header button:hover{
+    background-color: #ffb6c1;
+}
+.container .content header button a{
+    color: #FE024A;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: smaller;
+    
+
+}
+
+.container .content b{
+    font-family: Arial;
+}
+.container .content header nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: end;
+}
+.container .content header nav a{
+    text-decoration: none;
+    transition: all 1s;
+    padding-right: 20px;
+}
+.container .content header nav a:hover{
+    color: black;
+}
+.container .a{
+    text-transform: uppercase;
+    color: #7A7A7A;
+
+}
+/* header  */
+.container .photo1 {
+    display: none;
+    width: 35%;
+}
+.container .photo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container section{
+    margin-top: 70px;
+    position: relative;
+}
+.container section h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 5px;
+    
+}
+.container section p{
+    margin-top: 50px;
+    color: #7A7A7A;
+}
+.container section button  {
+    background-color: #FE024A;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: relative;
+    right: -100%;
+    transform: translateX(-100%);
+    margin-top: 70px;
+
+}
+.container section button:hover  {
+    background-color: #ad576f;
+    color: #FE024A;
+
+
+}
+
+.container section button a {
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+    
+}
+@media screen and (max-width: 1120px) {
+    body{
+        width: 90%;
+    }
+    .container .photo{
+        width: 30%;
+        
+    }
+    .container .content{
+        width: calc(70% - 80px);
+        padding: 40px;
+        
+    }
+    .container section h1{
+        font-size: 25px;
+    
+    }
+}
+@media screen and (max-width: 790px){
+    body{
+        width: 100%;
+    }
+    .container .photo{
+        display: none;
+    }
+    .container .photo1{
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    .container .content{
+        width: 100%;
+    }
+    .container .content section{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .container .content header{
+        flex-direction:column;
+        justify-content: start;
+        margin-left: -220px;
+        
+    }
+    .container .content header button{
+        width: 25%;
+        
+    }
+
+.container .content header nav{
+    text-align: center;
+
+    
+}
+
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8c989151b6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .thumbnail a img {width: 20%; object-fit: cover;aspect-ratio: 4/3;}
+        .slider{
+            position: relative;
+
+        }
+        .sup_slider{
+            position: relative;
+            overflow: hidden;
+
+        }
+        .item{
+            display: flex;
+            position: absolute;
+        }
+        .item:nth-child(2){
+            transform: translateX(100%);
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        i{
+            /* color: #333;
+            font-size: 32px;
+            height: 50px;
+            width: 25px;
+            background-color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            transform: translateY(100%); */
+            font-size: 32px;
+            transform: translateY(150%);
+            z-index: 10;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function(){
+
+$(function(){
+        let index=0;
+        const right_btn = document.querySelector('.fa-chevron-right')
+        const left_btn = document.querySelector('.fa-chevron-left')
+        const items_number= document.querySelectorAll('.item')
+        $("right_btn").click(function(){
+            index +=1;
+            if( index> items_number.length-1){
+                index=0
+            }
+            
+            document.querySelector(".sup__slider").style.right= index*100+"%";
+        });
+        left_btn.addEventListener("click", function(){
+            index = index -1;
+            if( index<= 0){
+                index= items_number.length-1;
+            }
+            document.querySelector(".sup__slider").style.right= index*100+"%"
+        })
+});
+});
+    </script>
+</head>
+<body>
+    <div class="slider">
+        <div class="sup__slider">
+            <div class="item">
+                <div class="thumbnail">
+                    <a href="detail.html">
+                        <img src="images/3e71188efa3735696c26.jpg" alt="product01">
+                    </a>
+                    <h4 class="text-success">Đầm 2 dây sốp trơn </h4>
+                    <p class="text-danger">180$</p>
+                    <button class="btn btn-danger">Add to Cart</button>
+                </div>
+                <div class="thumbnail">
+                    <a href="detail.html">
+                        <img src="images/3e71188efa3735696c26.jpg" alt="product01">
+                    </a>
+                    <h4 class="text-success">Đầm 2 dây sốp trơn </h4>
+                    <p class="text-danger">180$</p>
+                    <button class="btn btn-danger">Add to Cart</button>
+            </div>
+                <div class="thumbnail">
+                    <a href="detail.html">
+                        <img src="images/3e71188efa3735696c26.jpg" alt="product01">
+                    </a>
+                    <h4 class="text-success">Đầm 2 dây sốp trơn </h4>
+                    <p class="text-danger">180$</p>
+                    <button class="btn btn-danger">Add to Cart</button>
+                </div>
+                <div class="thumbnail">
+                    <a href="detail.html">
+                        <img src="images/3e71188efa3735696c26.jpg" alt="product01">
+                    </a>
+                    <h4 class="text-success">Đầm 2 dây sốp trơn </h4>
+                    <p class="text-danger">180$</p>
+                    <button class="btn btn-danger">Add to Cart</button>
+                </div>
+            </div>
+        <div class="item">
+            <div class="thumbnail">
+                <a href="detail.html">
+                    <img src="images/7cccbf2b5d9292cccb83.jpg" alt="product01">
+                </a>
+                <h4 class="text-success">Giày thể thao nữ độn đế </h4>
+                <p class="text-danger">220$</p>
+                <button class="btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="thumbnail">
+                <a href="detail.html">
+                    <img src="images/7cccbf2b5d9292cccb83.jpg" alt="product01">
+                </a>
+                <h4 class="text-success">Giày thể thao nữ độn đế </h4>
+                <p class="text-danger">220$</p>
+                <button class="btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="thumbnail">
+                <a href="detail.html">
+                    <img src="images/7cccbf2b5d9292cccb83.jpg" alt="product01">
+                </a>
+                <h4 class="text-success">Giày thể thao nữ độn đế </h4>
+                <p class="text-danger">220$</p>
+                <button class="btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="thumbnail">
+                <a href="detail.html">
+                    <img src="images/7cccbf2b5d9292cccb83.jpg" alt="product01">
+                </a>
+                <h4 class="text-success">Giày thể thao nữ độn đế </h4>
+                <p class="text-danger">220$</p>
+                <button class="btn btn-danger">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+</body>
+</html>

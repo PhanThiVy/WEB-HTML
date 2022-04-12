@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            width: 20%;
+        }
+        .container{
+            margin: auto;
+        }
+        form{
+            background-color: rgb(171, 169, 169);
+            padding: 10px 20px;
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px ;
+        }
+       label{
+           margin-bottom: 10px;
+       }
+       .button{
+           text-align: center;
+       }
+       #btn{
+           margin: 10px;
+           border-radius: 5px;
+           border: none;
+           padding: 5px 10px;
+           background-color: rgb(43, 43, 243);
+           color: #ffff;
+       }
+       .loi{
+           background-color: yellow;
+           color: red;
+       }
+       .bao_loi{
+           color: red;
+           font-size: smaller;
+       }
+       
+    </style>
+    <script>
+        
+        
+       function kiemtra(){
+        // kt họ và tên
+        var loi ="";
+            var name = document.getElementById("name");
+            if(name.value==""){
+                name.className="loi";
+                loi += "Họ và tên không được bỏ trống";
+            } else {name.className="txt"}
+            if (loi!=""){
+            $("#bao_loi1").html(loi);
+            setTimeout("document.getElementById('bao_loi1').innerHTML=''",100000);
+            return false;
+        };
+       }
+        function kiemtraemail(){
+            var loi1="";
+            var email = document.getElementById("email");
+            if(email.value==""){
+                email.className="loi";
+                loi1 += "Email không được bỏ trống";
+            }else {email.className="txt"}
+            if (loi1!=""){
+           $("#bao_loi2").html(loi1);
+            setTimeout("document.getElementById('bao_loi2').innerHTML=''",10000);
+            return false;
+        };
+        }
+        function kiemtrasdt(){
+            var loi2="";
+            var tel = document.getElementById("tel");
+            if(tel.value==""){
+                tel.className="loi";
+                loi2 += "Số điện thoại không được bỏ trống";
+            }else {tel.className="txt"}
+            if (loi2!=""){
+            $("#bao_loi3").html(loi2);
+            setTimeout("document.getElementById('bao_loi3').innerHTML=''",10000);
+            return false;
+        };
+        }
+        function kiemtramessage(){
+            var loi3="";
+            var message = document.getElementById("message");
+            if(message.value==""){
+                message.className="loi";
+                loi3 += "Số điện thoại không được bỏ trống";
+            }else {message.className="txt"}
+            if (loi3!=""){
+            $("#bao_loi4").html(loi3);
+            setTimeout("document.getElementById('bao_loi4').innerHTML=''",10000);
+            return false;
+        };
+        }
+        
+       
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="facebook.com">
+           <div class="div1">
+                <label>Họ và tên:</label>
+                <input id="name" type="text" class="txt">
+                <div id="bao_loi1" class="bao_loi"></div>
+           </div>
+          
+            <div class="div1">
+                <label>email:</label>
+                <input id="email" type="email" class="txt">
+            <div id="bao_loi2" class="bao_loi"></div>
+
+               </div>
+               <div class="div1">
+                <label >Số điện thoại:</label>
+                <input id="tel" type="tel" class="txt">
+                <div id="bao_loi3" class="bao_loi"></div>
+
+               </div>
+           
+           <div class="div1">
+                <label>Message</label>
+                <input id="message" type="text" class="txt">
+                <div id="bao_loi4" class="bao_loi"></div>
+           </div>
+            <div class="button">
+                <input id="btn" type="submit" value="GỬI" onclick="return kiemtra(), kiemtraemail(), kiemtrasdt(),kiemtramessage();">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

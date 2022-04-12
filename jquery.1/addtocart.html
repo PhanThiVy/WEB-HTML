@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c989151b6.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            display: flex;
+        }
+        .thumbnail{
+            width: 15%;
+            margin-right: 15px;
+            background-color: rgb(199, 194, 194);
+        }
+    .photo{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    h4,p{
+        padding-left: 10px;
+    }
+    button{
+        background-color: green;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    i{
+        font-size: 30px;
+        color: green;
+    }
+    sup{
+        font-size: 15px;
+    }
+    </style>
+    <script>
+        // $(document).ready(function(){
+        //     var i = 0;
+        //     $(".add").click(function(){
+        //         i++;
+        //         document.getElementById("so_luong").innerHTML=i;
+        //     });
+        // });
+        $(document).ready(function(){
+            $(".add").click(function(){
+                $("#so_luong").html(function(i,val){
+                    return +val +1;
+                })
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail">
+            <div class="photo">
+                <img src="images/z3211649184696_e3041d2c44798b8eeefe01161dcfed8e.jpg" alt="">
+            </div>
+            <h4>NAME</h4>
+            <P>$40</P>
+            <button class="add">Add to Cart</button>
+            <button>Xem chi tiết</button>
+        </div>
+        <div class="thumbnail">
+            <div class="photo">
+                <img src="images/z3211649184696_e3041d2c44798b8eeefe01161dcfed8e.jpg" alt="">
+            </div>
+            <h4>NAME</h4>
+            <P>$40</P>
+            <button class="add">Add to Cart</button>
+            <button>Xem chi tiết</button>
+        </div>
+       
+        <div class="thumbnail">
+            <div class="photo">
+                <img src="images/z3211649184696_e3041d2c44798b8eeefe01161dcfed8e.jpg" alt="">
+            </div>
+            <h4>NAME</h4>
+            <P>$40</P>
+            <button class="add">Add to Cart</button>
+            <button>Xem chi tiết</button>
+        </div>
+        <i class="fa-solid fa-cart-shopping" value="0"></i><sup id="so_luong">0</sup>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".add").click(function () {
+                $('#counter').html(function (i, val) {
+                    return +val + 1;
+                });
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+table{
+    border-collapse: collapse;
+    border-color: red;
+
+}
+
+table .photo{
+    width: 70px;
+}
+table .photo img{
+    width: 100%;
+}
+tr:nth-child(1) th:nth-child(1) {
+    background-color: red;
+    color: #ffff;
+    text-align: right;
+    padding: 5px;
+}
+
+tr:nth-child(3){
+    background-color: #FFC0CB;
+    color: #A42A26;
+    font-size: x-large;
+}
+
+tr:nth-child(4) td .ul1{
+    list-style-type: square;
+    color: red;
+    font-weight: 500;
+}
+tr:nth-child(4) td .ul1 .ul2{
+    list-style-type: circle;
+}
+tr:nth-child(4) td .ul1 .ul2 li{
+    color: black;
+}

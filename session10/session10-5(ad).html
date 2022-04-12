@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8c989151b6.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url(image/nền\ 10-5.jpg);
+            background-size: cover;
+            background-position: relative;
+        
+
+        }
+        .container{
+            width: 70%;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 0;
+            font-family: Arial;
+            font-size: smaller;
+        }
+        .content__left{
+            width: calc(50% - 60px);
+            color: white;
+            padding:0 30px;
+            margin-top: 20px;
+            color: gray;
+            
+        }
+        
+        .content__right{
+           width: 50%;
+           position: relative;
+        }
+        .content__right .div1{
+            /* width: 380px; */
+            height: 380px;
+            position: absolute ;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            /* transform-origin: left top; */
+            /* transform: rotate(-90deg); */
+            background-color:#BCC6BD ;
+            top: 70px;
+            left: 67px;
+            /* border-top-left-radius: 20px; */
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 8px;
+           
+
+
+            
+        }
+        .content__right .div1 p{
+            font-size: 15px;
+            margin: 0px;
+            text-align: center;
+            color: rgb(63, 61, 61);
+
+        }
+        .content__right form{
+            width: calc(100% - 100px - 100px);
+            background-color: rgba(83, 79, 79, 0.575);
+            color: black;
+            padding: 30px 50px;
+            margin-left: 100px;
+            margin-top: 40px;
+            color: black;
+            color: #ffff;
+            border-radius: 10px;
+            box-shadow: 1px 5px 20px 1px rgb(223, 219, 219), -1px -5px 20px 1px rgb(223, 219, 219) ;
+        }
+        .content__right .title{
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .content__right input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: black;
+
+        }
+        .content__right input::placeholder{
+            color: rgb(34, 33, 33);
+        }
+        .content__right .name, .email, .mobile{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+
+        }
+        
+
+        .content__right .name, .email, .mobile, .message{
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+            /* background-color: transparent; */
+            
+        }
+        .content__right i{
+            margin-right: 10px;
+        }
+
+        .content__right .label__radio{
+            margin: 20px 0;
+        
+        }
+        .content__right .label__mes{
+            margin-top: 20px ;
+            margin-bottom: -10px;
+        }
+        .content__right .submit{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .content__right .btn{
+            background-color:#636663;
+            padding: 10px 70px;
+            border-radius: 20px;
+            border: 1px solid rgba(15, 53, 15, 0.644);
+            font-weight: bolder;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+        .content__right .btn:hover{
+            box-shadow: 1px 3px 10px rgb(76, 78, 76);
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content__left">
+            <h1>Get in Touch</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+        </div>
+        <div class="content__right">
+            <div class="div1">
+                <p>Contact Info</p>
+            </div>
+            <form action="#">
+                <p class="title">Send us a Message</p>
+                <div class="name">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="mobile">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" required placeholder="Mobile">
+                </div>
+                <div class="label__radio">
+                    <label>Preferred mode of Communication</label>
+                </div>
+                <div>
+                    <input type="radio" name="mail"> Email
+                    <input type="radio" name="mail"> Phone
+                </div>
+               <div class="label__mes">
+                    <label>Message</label>
+              </div>
+              <div class="message">
+                <input type="text">
+              </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

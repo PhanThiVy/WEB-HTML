@@ -1,0 +1,43 @@
+body{
+    width: 90%;
+}
+.container{
+    position: relative;
+    width: 60%;
+    border-top: 2px solid gray;
+    padding: 3px;
+    font-size: x-small;
+}
+.container div{
+    padding: 5px;
+}
+.container .div1{
+    position: relative;
+    background-color: #FF99CC;
+    border: 2px solid #6860DD;
+}
+.container .div1a{
+    width: 200px;
+    height: 200px;
+}
+.container .div1b{
+    width: 200px;
+    height: 100px;
+    left: 50px;
+    top: -30px;
+}
+.container .div2{
+    position:absolute;
+    background-color: #6699FF;
+    border: 2px solid #C53AFF;
+    width: 300px;
+    height: 100px;
+}
+.container .div2a{
+    top: 70px;
+    left: 100px;
+}
+.container .div2b{
+   left: 200px;
+   top: 140px;
+}

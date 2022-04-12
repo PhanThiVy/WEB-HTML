@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color: aqua;
+            width: 320px;
+            padding: 30px;
+        }
+        .row {
+            display: flex;
+        }
+        label {
+            /* float: left; */
+            width: 100px;
+        }
+        input,select {
+            margin-bottom: 10px;
+        }
+        .btn {
+            background-color: green;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 3px 3px 5px lightgray;
+        }
+        #result {
+            background-color: green;
+            width: 320px;
+            padding: 30px;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showInfo(){
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let address = document.getElementById("address").value;
+            let phone = document.getElementById("phone").value;
+
+            if(name && email && address && phone) {
+                info = "Your Name: " + name + "<br>";
+                info += "Your Email: " + email + "<br>";
+                info += "Your Address: " + address + "<br>";
+                info += "Your Phone: " + phone;
+            }
+            document.getElementById("result").innerHTML = info;
+        }
+    </script>
+</head>
+<body>
+    <form action="http://www.google.com">
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" required id="name">
+        </div>
+        <div class="row">
+            <label>Email</label>
+            <input type="email" required id="email">
+        </div>
+        <div class="row">
+            <label>Address</label>
+            <input type="text" required id="address">
+        </div>
+        <div class="row">
+            <label>Phone</label>
+            <input type="tel" required id="phone">
+        </div>
+        <div class="row">
+            <label>&nbsp;</label>
+            <input type="submit" value="Show Information" class="btn" onclick="showInfo(); return false">
+        </div>
+    </form>
+    <div id="result"></div>
+</body>
+</html>

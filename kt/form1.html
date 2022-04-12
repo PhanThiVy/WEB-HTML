@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(function(){
+                $(".btn").click(function(){
+                    var loi1="";
+            var name = document.getElementById("name").value;
+            $()
+            if(name==0){
+                loi1 += "không để trống họ tên";
+            } else{
+                $("#name").addClass("txt");
+            }
+           if(loi1!= 0){
+                $("#baoloi1").html(loi1);
+                return false;
+           };
+                })
+    });
+    });
+        $(document).ready(function(){
+            $(function(){
+                $(".btn").click(function(){
+                    var loi2="";
+            var email = document.getElementById("email").value;
+            $()
+            if(email==0){
+                loi2 += "không để trống họ tên";
+            } else{
+                $("#email").addClass("txt");
+            }
+           if(loi2!= 0){
+                $("#baoloi2").html(loi2);
+                return false;
+           };
+                })
+    });
+    });
+        $(document).ready(function(){
+            $(function(){
+                $(".btn").click(function(){
+                    var loi3="";
+            var tel = document.getElementById("tel").value;
+            $()
+            if(tel==0){
+                loi3 += "không để trống họ tên";
+            } else{
+                $("#tel").addClass("txt");
+            }
+           if(loi3!= 0){
+                $("#baoloi3").html(loi3);
+                return false;
+           };
+                })
+    });
+    });
+        $(document).ready(function(){
+            $(function(){
+                $(".btn").click(function(){
+                    var loi4="";
+            var message = document.getElementById("message").value;
+            if(message==0){
+                loi4 += "không để trống họ tên";
+            } else{
+                $("#message").addClass("txt");
+            }
+           if(loi4!= 0){
+                $("#baoloi4").html(loi4);
+                return false;
+           };
+                })
+    });
+    });
+     
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="facebook.com">
+           <div class="div1">
+                <label>Họ và tên:</label>
+                <input id="name" type="text" class="txt">
+                <div id="bao_loi1" class="bao_loi"></div>
+           </div>
+          
+            <div class="div1">
+                <label>email:</label>
+                <input id="email" type="email" class="txt">
+            <div id="bao_loi2" class="bao_loi"></div>
+
+               </div>
+               <div class="div1">
+                <label >Số điện thoại:</label>
+                <input id="tel" type="tel" class="txt">
+                <div id="bao_loi3" class="bao_loi"></div>
+
+               </div>
+           
+           <div class="div1">
+                <label>Message</label>
+                <input id="message" type="text" class="txt">
+                <div id="bao_loi4" class="bao_loi"></div>
+           </div>
+            <div class="button">
+                <input id="btn" type="submit" value="GỬI">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .row{
+            display: flex;
+        }
+        label{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://google.com">
+        <h2>Registration Form</h2>
+        <div class="row">
+            <label>StudentID *</label>
+            <input type="text" placeholder="Input your ID" required>
+        </div>
+        <div class="row">
+            <label>User Name</label>
+            <input type="text" placeholder="Input your name">
+        </div>
+        <div class="row">
+            <label>Password *</label>
+            <input type="password" required>
+        </div>
+        <div class="row">
+            <label>Email</label>
+            <input type="email">
+        </div>
+        <div class="row">
+            <label>DOB</label>
+            <input type="date">
+        </div>
+        <div class="row">
+            <label>Phone</label>
+            <input type="tel">
+        </div>
+        <div class="row">
+            <label>Fee</label>
+            <input type="number" placeholder="Input number">
+        </div>
+        <div class="row">
+            <label>Course</label>
+            <input type="checkbox"> Java
+            <input type="checkbox"> JDBC
+            <input type="checkbox"> EJB
+            <input type="checkbox"> JSP
+        </div>
+        <div class="row">
+            <label>Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+        <div class="row">
+            <label>Qualification</label>
+            <select>
+                <option>B.Tech</option>
+                <option>A.Tech</option>
+                <option>C.Tech</option>
+                <option>D.Tech</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>&nb</label>
+            <input class="btn" type="submit" value="OK">
+        </div>
+    </form>
+</body>
+</html>

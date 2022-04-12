@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+         form{
+            padding: 10px 20px 20px 10px;
+            background-color:#F5DEB3 ;
+            width: 30%;
+        }
+        .row{
+            display: flex;
+            padding: 5px;
+            
+        }
+        label{
+            width: 140px;
+        }
+        .btn{
+            background-color:#E2E2E2 ;
+        }
+        #result{
+            margin-top: 10px;
+            background-color: green;
+            padding: 10px 20px 20px 10px;
+            width: 30%;
+            height: 100px;
+
+        }
+    </style>
+    <script>
+        function showInfo(){
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            if(name && password) {
+                info = "Đăng nhập thành công " 
+            }
+            document.getElementById("result").innerHTML = info;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="row">
+            <label>Full Name *: </label>
+            <input type="text" a="admin" required id="name" >
+        </div>
+        <div class="row">
+            <label>Password *:</label>
+            <input type="password" b="123" required id="password">
+        </div>
+        <div class="row">
+            <label>&nbsp;</label>
+            <input class="btn" type="submit" value="Show information" onclick="showInfo(); return false">
+        </div>
+
+    </form>
+    <div id="result">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+.container{
+    padding: 5px;
+    box-shadow: 2px 3px 5px 3px gray;
+    text-align: center;
+}
+h1{
+    color: #CC0033;
+}
+table{
+    border-collapse: collapse;
+    border-color: orange;
+    margin: 0 auto
+}
+table tr th{
+    background-color: #CC0033;
+    color: white;
+}
+/* table tr td{
+    text-align: center;
+}
+table tr:nth-child(){
+    text-align: left;
+} */

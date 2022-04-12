@@ -1,0 +1,78 @@
+body{
+    width: 60%;
+    margin: auto;
+}
+/* .container{} */
+.table1{
+    width: 600px;
+    height: 100px;
+    
+}
+.table1 tr:nth-child(1) th:nth-child(1){
+background-color: #FFC0CB;
+}
+.table1 tr:nth-child(1) th:nth-child(2){
+    background-color: #00BFFF;
+}
+.table1 tr:nth-child(2) th:nth-child(1), th:nth-child(2){
+    background-color: #ADFF2F;
+}
+.table1 tr:nth-child(2) th:nth-child(3), th:nth-child(4){
+    background-color: #FFA500
+}
+/* .table1 tr:nth-child(2) td:nth-child(1){
+
+} */
+.table2{
+    background-image: url(../image/nenhong.jpg);
+}
+.table2 th{
+    padding: 10px 60px;
+}
+.table2 td {
+    width: 140px;
+}
+
+.table3 td{
+    padding: 0 40px;
+}
+.table3 tr:nth-child(1) td:nth-child(1) {
+    background-color: #9400D3;
+}
+.table3 tr:nth-child(1) td:nth-child(2) {
+    background-color: #ADFF2F;
+}
+.table3 tr:nth-child(1) td:nth-child(3) {
+    background-color: #FF1493;
+}
+.table3 tr:nth-child(1) td:nth-child(4) {
+    background-color: #FFFF00;
+}
+.table3 tr:nth-child(2) td:nth-child(1) {
+    background-color: #A9A9A9;
+}
+.table3 tr:nth-child(2) td:nth-child(3) {
+    background-color: #90EE90;
+}
+.table3 tr:nth-child(2) th:nth-child(2){
+    background-image: url(../image/hinhquangcao.gif);
+    color:#ADFF2F ;
+}
+.table3 tr:nth-child(3) td:nth-child(1) {
+    background-color: #006700;
+}
+.table3 tr:nth-child(3) td:nth-child(2) {
+    background-color: #87CEEB;
+}
+.table3 tr:nth-child(4) td:nth-child(1) {
+    background-color: #FFFF00;
+}
+.table3 tr:nth-child(4) td:nth-child(2) {
+    background-color: #EE82EE;
+}
+.table3 tr:nth-child(4) td:nth-child(3) {
+    background-color: #FFB6C1;
+}
+.table3 tr:nth-child(4) td:nth-child(4) {
+    background-color: #6495ED;
+}

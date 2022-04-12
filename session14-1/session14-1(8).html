@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var a = new Array(10);
+        var i;
+        for(i = 1; i <11; i++){
+            
+           do{
+            a[i] = prompt("nhập vào số thứ:" + i,);
+           }while(a[i] < 0);
+           document.write(a[i]);
+        }
+        // in các số theo chiều ngược lại
+        document.write("<br>" );
+        document.write("Các số theo hướng ngược lại so với thứ tự nhập: ");
+        for(i = 9; i >= 0; i--){
+            document.write(a[i]);
+        }
+        // in các số theo chiều ngc lại ở vị trí lẻ
+        document.write("<br>" );
+        document.write("ra các số theo hướng ngược lại so với thứ tự nhập tại vị trí chẵn: ");
+        for(i = 10; i >= 1; i--){
+            if(i%2 == 0){
+                document.write(a[i]);
+            }
+        }
+    </script>
+</body>
+</html>
